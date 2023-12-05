@@ -1,32 +1,33 @@
-# Printer Utility Package
+# HP-Printer-Toolkit
 
-A Python package for discovering printers on the network and interacting with them for scanning purposes.
+HP-Printer-Toolkit is a Python package for discovering and interacting with HP printers on the network. It allows users to discover printers, check their scanning status, and initiate scans. Please note that this package is not affiliated with HP and is an independent project developed by Julian Zientkowski.
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Discover Class](#discover-class)
 - [Connect Class](#connect-class)
+- [Important Notes](#important-notes)
 - [License](#license)
 - [Creator](#creator)
 
 ## Installation
 
 ```bash
-pip install printer-utility
+pip install hp-printer-toolkit
 ```
 
 ## Usage
 
 ```python
-from printer_utility import Discover, Connect
+from hp_printer_toolkit import Discover, Connect
 
 # Example usage
 discovery = Discover()
 printers = await discovery.discover_printers()
 print(printers)
 
-# Assuming 'printer_ip' is the IP address of a discovered printer
+# Assuming 'printer_ip' is the IP address of an HP printer
 connection = Connect(printer_ip)
 status = await connection.scan_status()
 print(status)
@@ -43,17 +44,23 @@ if scan_result:
 ### Methods
 
 #### `discover_printers() -> dict`
-Discovers printers on the local network and returns a dictionary with printer information.
+Discovers HP printers on the local network and returns a dictionary with printer information.
 
 ## Connect Class
 
 ### Methods
 
 #### `scan_status() -> dict`
-Fetches the scanning status of the connected printer and returns a dictionary.
+Fetches the scanning status of the connected HP printer and returns a dictionary.
 
 #### `scan(file_type: str = "pdf", color_mode: str = "RGB24", resolution: int = 300) -> bytes or None`
 Initiates a scan with the specified settings and returns the scanned document content as bytes. Returns `None` on failure.
+
+## Important Notes
+
+- **Disclaimer:** This project is not affiliated with HP.
+- **Webscan and Authentication:** Webscan must be enabled, and authentication must be disabled for the package to work properly with HP printers.
+- **Compatibility:** This package was tested with the HP DeskJet 5075 model.
 
 ## License
 
