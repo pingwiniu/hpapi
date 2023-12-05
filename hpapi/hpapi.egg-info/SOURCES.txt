@@ -1,0 +1,6 @@
+setup.py
+hpapi.egg-info/PKG-INFO
+hpapi.egg-info/SOURCES.txt
+hpapi.egg-info/dependency_links.txt
+hpapi.egg-info/requires.txt
+hpapi.egg-info/top_level.txt
