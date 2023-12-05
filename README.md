@@ -13,13 +13,13 @@ hpapi is a Python package for discovering and interacting with HP printers on th
 ## Installation
 
 ```bash
-pip install hp-printer-toolkit
+pip install hpapi
 ```
 
 ## Usage
 
 ```python
-from hp_printer_toolkit import Discover, Connect
+from hpapi import Discover, Connect
 
 # Example usage
 discovery = Discover()
