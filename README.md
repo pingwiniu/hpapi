@@ -1,6 +1,5 @@
-# HP-Printer-Toolkit
-
-HP-Printer-Toolkit is a Python package for discovering and interacting with HP printers on the network. It allows users to discover printers, check their scanning status, and initiate scans. Please note that this package is not affiliated with HP and is an independent project developed by Julian Zientkowski.
+# hpapi
+hpapi is a Python package for discovering and interacting with HP printers on the network. It allows users to discover printers, check their scanning status, and initiate scans. Please note that this package is not affiliated with HP and is an independent project.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -65,7 +64,3 @@ Initiates a scan with the specified settings and returns the scanned document co
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Creator
-
-- **Julian Zientkowski**
