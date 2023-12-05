@@ -55,6 +55,9 @@ Fetches the scanning status of the connected HP printer and returns a dictionary
 #### `scan(file_type: str = "pdf", color_mode: str = "RGB24", resolution: int = 300) -> bytes or None`
 Initiates a scan with the specified settings and returns the scanned document content as bytes. Returns `None` on failure.
 
+#### `consumable_status() -> dict or str`
+Fetches the consumable status of the connected HP printer asynchronously and returns a dictionary containing information about consumables such as toner levels. Returns an error message as a string on failure.
+
 ## Important Notes
 
 - **Disclaimer:** This project is not affiliated with HP.
