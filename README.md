@@ -1,6 +1,8 @@
 # hpapi
 hpapi is a Python package for discovering and interacting with HP printers on the network. It allows users to discover printers, check their scanning status, and initiate scans. Please note that this package is not affiliated with HP and is an independent project.
 
+[![Downloads](https://static.pepy.tech/badge/hpapi/month)](https://pepy.tech/project/hpapi)
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
